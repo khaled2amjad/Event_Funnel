@@ -10,6 +10,18 @@ function playPromoVideo() {
     }
 }
 
+// Form Submission Handler
+document.addEventListener('DOMContentLoaded', function() {
+    const registrationForm = document.querySelector('.registration-form');
+
+    if (registrationForm) {
+        registrationForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            window.location.href = 'confirmation.html'; // Redirect to confirmation page
+        });
+    }
+});
+
 // Video Event Listeners
 document.addEventListener('DOMContentLoaded', function() {
     const video = document.querySelector('.promo-video');
